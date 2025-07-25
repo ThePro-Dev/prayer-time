@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="controls">
+            <h1 class="city-name"></h1>
+            <p class="date"></p>
+
+
+
+            <div class="country-contaner">
+                <div class="country">
+                    <h2>العراق</h2>
+                    <ul>
+                        <li id="baghdad" onclick="getprayertime( 'IQ', 'Baghdād',this)">بغداد</li>
+                        <li onclick="getprayertime( 'IQ', 'Al Başrah',this)">البصرة</li>
+                    </ul>
+                </div>
+                <div class="country">
+                    <h2>السعودية</h2>
+                    <ul>
+                        <li onclick="getprayertime('SA' , 'Ar Riyāḑ',this)">الرياض</li>
+                        <li onclick="getprayertime('SA' , 'Ash Sharqīyah',this)" >الشرقية</li>
+                    </ul>
+                </div>
+                <div class="country">
+                    <h2>مصر</h2>
+                    <ul>
+                        <li onclick="getprayertime( 'EG', 'Al Qāhirah',this)">القاهرة</li>
+                        <li onclick="getprayertime( 'EG', 'Al Iskandarīyah',this)">الاسكندرية</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            
+        </div>
+
+
+        <div class="prayer-times">
+            <div class="prayer-time">
+                <p>العصر</p>
+                <p id="asr-time">- - : - -</p>
+            </div>
+            <div class="prayer-time">
+                <p>الضهر</p>
+                <p id="dhuhr-time">- - : - -</p>
+            </div>
+            <div class="prayer-time">
+                <p>الفجر</p>
+                <p id="fajr-time">- - : - -</p>
+            </div>
+            <div class="prayer-time">
+                <p>العشاء</p>
+                <p id="isha-time">- - : - -</p>
+            </div>
+            <div class="prayer-time">
+                <p>المغرب</p>
+                <p id="maghrib-time">- - : - -</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

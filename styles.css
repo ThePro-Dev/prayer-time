@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    background: linear-gradient(45deg,#eeeeee,#5b5b5b);
+    height: 100vh;
+}
+.main{
+    display: flex;
+}
+.controls{
+    width: 40%;
+    border-left: 1px solid black;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 20px;
+    color: #eeeeee;
+}
+.prayer-time{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: #9a9a9a;
+    box-shadow: inset 0 0 10px black;
+}
+.prayer-times{
+    width: 60%;
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 20px;
+}
+select{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+select:focus{
+    border: none;
+}
+option{
+    all: unset;
+    background-color: #9a9a9a;
+}
+p{
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+li,h2{
+    padding: 5px;
+}
+li:hover{
+    cursor: pointer;
+    background: linear-gradient(to left , #5b5b5b, #eeeeee00);
+}
