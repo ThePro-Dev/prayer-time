@@ -11,7 +11,8 @@ function getprayertime(country1 , city1,takecityname){
     country : country1,
     city : city1,
     }
-    axios.get('http://api.aladhan.com/v1/timingsByCity', {
+    axios.get('https://api.aladhan.com/v1/timingsByCity', {
+
         params: params
     })
     .then(function (response) {
